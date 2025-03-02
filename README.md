@@ -12,6 +12,8 @@ This project uses the iCEBreaker switches and LEDs Pmod and the Digilent Seven-s
 
 Code is implemented using Lattice Radiant, and the simulations are tested using QuestaSim.
 
+![FPGA Board](docs/fpga_board.jpg)
+
 ## Contents
 
 ### Project 1: Switches to LEDs
@@ -47,3 +49,13 @@ Simulate the debouncer module.
 ### Simulation 3: State Machine
 
 Simulate a state machine of a turnstile. The testbench includes assertions.
+
+## How to Program the iCEBreaker v1.0e Board using Radiant Programmer
+
+1. In the Radiant Programmer, right-click the device entry and open Device Properties.
+2. In the Device Properties, change the Target Memory to `External SPI Flash Memory (SPI FLASH)`.
+3. In the SPI Flash Options, change the vendor to `Micron`, the Device to `N25Q064`, and the package to `8-lead VDFPN8`, as shown in the image below.
+
+Now you can program the iCEBreaker v1.0e board using Radiant Programmer.
+
+![Device Properties](docs/radiant_programmer_device_properties.png)
