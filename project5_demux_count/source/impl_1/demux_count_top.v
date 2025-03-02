@@ -1,4 +1,4 @@
-module demux_lfsr_top (
+module demux_count_top (
     input i_clk,
     input i_switch_1,
     input i_switch_2,
