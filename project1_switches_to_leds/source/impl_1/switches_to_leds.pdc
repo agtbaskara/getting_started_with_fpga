@@ -1,0 +1,8 @@
+ldc_set_location -site {19} [get_ports i_switch_3]
+ldc_set_location -site {18} [get_ports i_switch_4]
+ldc_set_location -site {27} [get_ports o_led_1]
+ldc_set_location -site {23} [get_ports o_led_2]
+ldc_set_location -site {25} [get_ports o_led_3]
+ldc_set_location -site {21} [get_ports o_led_4]
+ldc_set_location -site {10} [get_ports i_switch_1]
+ldc_set_location -site {20} [get_ports i_switch_2]
