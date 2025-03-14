@@ -36,6 +36,10 @@ An improvement of Project 3 by adding a switch debouncer.
 
 A combination of a clock divider and a demultiplexer. We blink one of 4 LEDs selected using the demultiplexer.
 
+### Project 6: Memory Game
+
+An implementation of a memory game similar to Simon ([link](https://en.wikipedia.org/wiki/Simon_(game))) using switches for input, LEDs for indicators, and a seven-segment display for showing the score.
+
 ## Simulations
 
 ### Simulation 1: AND Gate
