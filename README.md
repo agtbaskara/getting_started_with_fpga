@@ -1,4 +1,4 @@
-# Getting Started with FPGA
+# Getting Started with FPGAs (iCEBreaker Board)
 
 ## About
 
