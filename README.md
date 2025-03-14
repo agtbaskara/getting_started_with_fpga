@@ -1,4 +1,4 @@
-# Getting Started with FPGA
+# Getting Started with FPGAs (iCEBreaker Board)
 
 ## About
 
@@ -10,7 +10,7 @@ The code in this repository is meant to be used with the iCEBreaker FPGA v1.0e (
 
 This project uses the iCEBreaker switches and LEDs Pmod and the Digilent Seven-segment Pmod Display ([link](https://digilent.com/reference/pmod/pmodssd/start))
 
-Code is implemented using Lattice Radiant, and the simulations are tested using QuestaSim.
+Code is implemented using Lattice Radiant 2024.2, and the simulations are tested using QuestaSim 2024.2
 
 ![FPGA Board](docs/fpga_board.jpg)
 
@@ -54,7 +54,9 @@ Simulate the debouncer module.
 
 Simulate a state machine of a turnstile. The testbench includes assertions.
 
-## How to Program the iCEBreaker v1.0e Board using Radiant Programmer
+# How to Program the iCEBreaker v1.0e Board
+
+## Using Radiant Programmer (Windows)
 
 1. In the Radiant Programmer, right-click the device entry and open Device Properties.
 2. In the Device Properties, change the Target Memory to `External SPI Flash Memory (SPI FLASH)`.
@@ -63,3 +65,17 @@ Simulate a state machine of a turnstile. The testbench includes assertions.
 Now you can program the iCEBreaker v1.0e board using Radiant Programmer.
 
 ![Device Properties](docs/radiant_programmer_device_properties.png)
+
+## Using iceprog (Ubuntu)
+
+Install `iceprog`
+
+```
+sudo apt install fpga-icestorm
+```
+
+To program the bitstream, replace `<bitstream file>` with the generated bitstream:
+
+```
+iceprog <bitstream file>.bin
+```
